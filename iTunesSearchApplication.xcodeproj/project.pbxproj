@@ -14,6 +14,10 @@
 		AEA912A21D3D9D9B0076C805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA912A01D3D9D9B0076C805 /* LaunchScreen.storyboard */; };
 		AEA912AD1D3D9D9B0076C805 /* iTunesSearchApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA912AC1D3D9D9B0076C805 /* iTunesSearchApplicationTests.swift */; };
 		AEA912B81D3D9D9B0076C805 /* iTunesSearchApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA912B71D3D9D9B0076C805 /* iTunesSearchApplicationUITests.swift */; };
+		AEA912C61D3D9F700076C805 /* song.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA912C51D3D9F700076C805 /* song.swift */; };
+		AEA912C81D3DA0C30076C805 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA912C71D3DA0C30076C805 /* Connection.swift */; };
+		AEA912CA1D3DBF100076C805 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA912C91D3DBF100076C805 /* CustomCell.swift */; };
+		AEA912CC1D3DC43F0076C805 /* LyricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA912CB1D3DC43F0076C805 /* LyricsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		AEA912B31D3D9D9B0076C805 /* iTunesSearchApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesSearchApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA912B71D3D9D9B0076C805 /* iTunesSearchApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesSearchApplicationUITests.swift; sourceTree = "<group>"; };
 		AEA912B91D3D9D9B0076C805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEA912C51D3D9F700076C805 /* song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = song.swift; sourceTree = "<group>"; };
+		AEA912C71D3DA0C30076C805 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = ../Connection.swift; sourceTree = "<group>"; };
+		AEA912C91D3DBF100076C805 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		AEA912CB1D3DC43F0076C805 /* LyricsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,16 @@
 		AEA912961D3D9D9B0076C805 /* iTunesSearchApplication */ = {
 			isa = PBXGroup;
 			children = (
+				AEA912C71D3DA0C30076C805 /* Connection.swift */,
 				AEA912971D3D9D9B0076C805 /* AppDelegate.swift */,
 				AEA912991D3D9D9B0076C805 /* ViewController.swift */,
 				AEA9129B1D3D9D9B0076C805 /* Main.storyboard */,
 				AEA9129E1D3D9D9B0076C805 /* Assets.xcassets */,
 				AEA912A01D3D9D9B0076C805 /* LaunchScreen.storyboard */,
 				AEA912A31D3D9D9B0076C805 /* Info.plist */,
+				AEA912C51D3D9F700076C805 /* song.swift */,
+				AEA912C91D3DBF100076C805 /* CustomCell.swift */,
+				AEA912CB1D3DC43F0076C805 /* LyricsViewController.swift */,
 			);
 			path = iTunesSearchApplication;
 			sourceTree = "<group>";
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA912CC1D3DC43F0076C805 /* LyricsViewController.swift in Sources */,
 				AEA9129A1D3D9D9B0076C805 /* ViewController.swift in Sources */,
 				AEA912981D3D9D9B0076C805 /* AppDelegate.swift in Sources */,
+				AEA912CA1D3DBF100076C805 /* CustomCell.swift in Sources */,
+				AEA912C61D3D9F700076C805 /* song.swift in Sources */,
+				AEA912C81D3DA0C30076C805 /* Connection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +500,7 @@
 				AEA912BE1D3D9D9B0076C805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEA912BF1D3D9D9B0076C805 /* Build configuration list for PBXNativeTarget "iTunesSearchApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +509,7 @@
 				AEA912C11D3D9D9B0076C805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEA912C21D3D9D9B0076C805 /* Build configuration list for PBXNativeTarget "iTunesSearchApplicationUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +518,7 @@
 				AEA912C41D3D9D9B0076C805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
