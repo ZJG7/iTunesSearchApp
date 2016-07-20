@@ -90,7 +90,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             while(i < dataCount){
                 let result = results![i]
                 //add to songArray
-                let kind = result["kind"] as! String
+                if let kind = result["kind"] as? String{
                 if(kind == "song"){
                     let artistName = result["artistName"] as! String
                     let trackName = result["trackName"] as! String
@@ -98,7 +98,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     let albumImage = result["artworkUrl60"] as! String
                     let song = Song.init(trackName: trackName, artistName: artistName, albumName: albumName, imageAddress: albumImage)
                     songArray.append(song)
-                }
+                    }}
                 i++
             }
 
